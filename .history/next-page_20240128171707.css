@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --black-bg:#2f2d2d;
+    --black-high-emphasis:#3d3c3c;
+    --yellow:#f7d55a;
+    --yellow-banner-text:#f1c255;
+    --placeholder-white:whitesmoke;
+}

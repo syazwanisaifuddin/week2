@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --black-bg:#2f2d2d;
+    --black-high-emphasis:#3d3c3c;
+    --yellow:#efbd07;
+    --yellow-banner-text:#b78d2c;
+    --placeholder-white:whitesmoke;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inter';
+    transition: 0.1s ease-in-out;;
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--placeholder-white);
+}
+
+li{
+    list-style-type: none;
+
+}
+
+li a{
+    text-decoration: none;
+    color:var(--placeholder-white);
+}
+
+li a:hover, i:hover{
+    color:var(--yellow-banner-text);
+
+}
+
+.header{
+    background-color: var(--black-bg);
+    display: flex;
+    flex-direction: row;
+    padding:0 1em;
+    justify-content: space-between;
+    max-width: 90%;
+    margin:1em auto;
+    border-radius: 1.25em;
+    
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 2.20em; 0;
+    font-size: 20px;
+    line-height: 1em;
+    letter-spacing: 0.15%;
+}
+
+.side-nav{
+    display: flex;
+    flex-direction: row;
+    gap:2.5em;
+}
+
+.nav-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+    margin:2.25em 0;
+    list-style-type: none;
+
+}
+
+i,i::before{
+    font-size: 1.5em;
+}
+
+.logo, .logo-footer,
+i,i::before, button, .book, .left-side p{
+    cursor: pointer;
+}
+
+
+.button-login{
+    display: flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+    border-radius: 16px;
+    background: var(--Yellow-500, #F4CE47);
+    margin: 20px; 0;
+   
+    
+    
+}
+.button-login:hover{
+    color:rgb(15, 14, 14);
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+    .header,
+    .main-nav{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .main-nav{
+        text-align: center;
+
+    }
+    .header{
+        padding: 0;
+        margin-top:0;
+    }
+}
+
+.marquee-container {
+    background-color: var(--yellow);
+    display: flex;
+    margin: 27px auto;
+    justify-content: center;
+
+    
+}
+.marquee-container .text-container{
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    gap:1.5em;
+    background-color: var(--yellow);
+    margin: 0 auto;
+    justify-content: center;
+    padding:0.75em ;
+}
+
+.hover-word:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+.marquee-container h1{
+    font-size: 2rem;
+    line-height: 56px;
+    font-weight: 300;
+    color:var(--yellow-banner-text);
+}
+
+.marquee-container span{
+    color:black;
+}
+
+.marquee {
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+
+@media (max-width: 900px) {
+    .marquee-container{
+        margin-top: 22px;
+        margin-bottom: 16px;
+    }
+    
+}
+
+main{
+    background-color: var(--black-bg);
+    padding:50px 0;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+
+.book-container{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap:8px;
+    justify-content: center;
+}
+
+.book{
+    background-color: white;
+    height:577px;
+    width:294px;
+    border-radius:20px;
+    padding:1.5em;
+}
+.book-content{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    height:100%;
+}
+.book i, .book i::before{
+    font-size: 16px;
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.book-details{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    padding: 10px;
+}
+.book-author{
+    font-size: 14px;
+}
+.book-title{
+    font-size: 18px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+}
+
+.comment li{
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+    padding:8px 0.75em;
+    border:1px solid black;
+    border-radius:30px;
+}
+.comment-star:hover,
+.comment-text:hover,
+.book i:hover{
+    background-color: var(--yellow);
+    color:var(--placeholder-white);
+}
+
+.price-tag{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+}
+
+.price{
+    color:gray;
+    text-decoration:line-through;
+}
+.no-promo{
+    display: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    background-color: var(--black-bg);
+    color:var(--placeholder-white);
+    max-width: 1248px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.top-footer,
+.bottom-footer,
+.footer-icons,
+.left-side,
+.right-side{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+
+}
+
+.top-footer,
+.bottom-footer{
+   
+    justify-content: space-between;
+}
+
+.top-footer{
+    padding:20px 1.5em;
+    align-items: center;
+}
+.bottom-footer{
+    background-color: var(--black-high-emphasis);
+    padding:0.75em 1.5em;
+}
+
+
